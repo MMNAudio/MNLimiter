@@ -77,16 +77,16 @@ MnlimiterAudioProcessorEditor::~MnlimiterAudioProcessorEditor()
 //==============================================================================
 void MnlimiterAudioProcessorEditor::paint (Graphics& g)
 {
-    // (Our component is opaque, so we must completely fill the background with a solid colour)
-    /*
+    
     g.fillAll (getLookAndFeel().findColour (ResizableWindow::backgroundColourId));
 
     g.setColour (Colours::white);
     g.setFont (15.0f);
-    */
+    
 
-    Image background = ImageCache::getFromMemory(BinaryData::TestImage_jpeg, BinaryData::TestImage_jpegSize);
-    g.drawImageAt(background, 0, 0);
+    //** Terrible Test Background **//
+    //Image background = ImageCache::getFromMemory(BinaryData::TestImage_jpeg, BinaryData::TestImage_jpegSize);
+    //g.drawImageAt(background, 0, 0);
 }
 
 void MnlimiterAudioProcessorEditor::resized()
